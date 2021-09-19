@@ -1,0 +1,67 @@
+Arguments: 
+  /Users/deberohp/.nvm/versions/node/v13.12.0/bin/node /Users/deberohp/.nvm/versions/node/v16.8.0/bin/yarn
+
+PATH: 
+  /Users/deberohp/.nvm/versions/node/v13.12.0/bin:/Users/deberohp/.nvm/versions/node/v13.12.0/bin:/Users/deberohp/.nvm/versions/node/v16.8.0/bin:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/deberohp/.nvm/versions/node/v16.8.0/bin:/Applications/Sublime Text.app/Contents/SharedSupport/bin://Applications/Postgres.app/Contents/Versions/11/bin://Applications/Postgres.app/Contents/Versions/11/bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  13.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@bable%2fpreset-react: Not found
+      at Request.params.callback [as _callback] (/Users/deberohp/.nvm/versions/node/v16.8.0/lib/node_modules/yarn/lib/cli.js:66992:18)
+      at Request.self.callback (/Users/deberohp/.nvm/versions/node/v16.8.0/lib/node_modules/yarn/lib/cli.js:140763:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/Users/deberohp/.nvm/versions/node/v16.8.0/lib/node_modules/yarn/lib/cli.js:141735:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/Users/deberohp/.nvm/versions/node/v16.8.0/lib/node_modules/yarn/lib/cli.js:141657:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1201:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "mern-simplesetup",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "@hot-loader/react-dom": "16.13.0",
+      "express": "4.17.1",
+      "mongodb": "3.5.5",
+      "react": "16.13.1",
+      "react-dom": "16.13.1",
+      "react-hot-loader": "4.12.20"
+    },
+    "scripts": {
+      "development": "nodemon",
+      "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+      "start": "NODE_ENV=production node ./dist/server.generated.js"
+    },
+    "devDependencies": {
+      "@babel/core": "7.9.0",
+      "@babel/preset-env": "7.9.0",
+      "@bable/preset-react": "7.9.4",
+      "babel-loader": "8.1.0",
+      "nodemon": "2.0.2",
+      "webpack": "4.42.1",
+      "webpack-cli": "3.3.11",
+      "webpack-dev-middleware": "3.7.2",
+      "webpack-hot-middleware": "2.25.0",
+      "webpack-node-externals": "1.7.2"
+  
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
